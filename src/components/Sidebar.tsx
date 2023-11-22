@@ -7,7 +7,7 @@ import {HiOutlineShoppingBag} from 'react-icons/hi'
 import { UserButton, auth, useAuth } from '@clerk/nextjs'
 
 
- const Sidebar = async ({children}) => {
+ const Sidebar = async ({children}: any) => {
     // const { isLoaded, userId, sessionId, getToken } = userAuth();
     const {userId} = await auth();
     const isAuth = !!userId;
