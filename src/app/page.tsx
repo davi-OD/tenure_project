@@ -1,6 +1,7 @@
 import Cards from '@/components/Cards'
 import Forms from '@/components/Forms'
-import Header from '@/components/Header'
+import Header from '@/components/HeroHeader'
+import HeroSection from '@/components/HeroSection'
 import Sidebar from '@/components/Sidebar'
 import SignIn from '@/components/SignIn'
 import Users from '@/components/Users'
@@ -116,17 +117,21 @@ export default function Home() {
       // </div> */}
     //   <Header/>
     // </main>
-    <Sidebar>
-      <main className='bg-gray-100 min-h-screen'>
-        <Header/>
-        <Cards/>
-        <div className="p-6">
-        <Users/>
-        <Forms/>
-        <SignIn/>
-        </div>
+    // <Sidebar>
+    //   <main className='bg-gray-100 min-h-screen'>
+    //     <Header/>
+    //     <Cards/>
+    //     <div className="p-6">
+    //     <Users/>
+    //     <Forms/>
+    //     <SignIn/>
+    //     </div>
         
-      </main>
-    </Sidebar>
+    //   </main>
+    // </Sidebar>
+    <div>
+    <Header />
+    <HeroSection />
+   </div>
   )
 }

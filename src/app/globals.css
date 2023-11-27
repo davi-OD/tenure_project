@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#HeroSection{
+  background-image: url('../Images/Hero-section.svg');
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
