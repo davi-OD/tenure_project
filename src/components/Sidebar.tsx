@@ -28,7 +28,7 @@ import { UserButton, auth, useAuth } from '@clerk/nextjs'
                     </div>
                     
                 </Link>
-                <Link href='/Users'>
+                <Link href={'/users'}>
                     <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
                     <RxPerson size={20}/>
                     </div>

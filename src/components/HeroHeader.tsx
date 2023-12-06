@@ -1,6 +1,7 @@
 import React from 'react'
 import AppLogo from '@/Images/Logo/Logo.png'
 import { Image } from 'next/dist/client/image-component'
+import Link from 'next/link'
 
 function Header() {
   return (
@@ -10,12 +11,12 @@ function Header() {
       <Image src={AppLogo} className="h-13 w-25" alt="App Logo" />
   </a>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button type="button" className=" text-purple-700 bg-white border mr-5 border-purple-700 hover:bg-purple-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-gray-900 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Sign In</button>
+      <button type="button" className=" text-purple-700 bg-white border mr-5 border-purple-700 hover:bg-purple-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-gray-900 dark:hover:bg-purple-700 dark:focus:ring-purple-800"><Link href={'/sign-in'}>Sign In</Link></button>
       <button type="button" className=" text-white bg-purple-700 border mr-5 border-purple-700 hover:bg-purple-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-gray-900 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Get started</button>
       <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
   </div>

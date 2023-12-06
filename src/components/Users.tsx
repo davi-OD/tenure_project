@@ -55,7 +55,7 @@ import React from 'react'
         },
       ]
       
-      export default function Users() {
+      export default function users() {
         return (
             <div className=""><p>Users</p>
           <ul role="list" className="divide-y divide-gray-100">

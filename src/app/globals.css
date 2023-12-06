@@ -4,6 +4,30 @@
 #HeroSection{
   background-image: url('../Images/Hero-section.svg');
 }
+#about-section{
+  background-image: url('../Images/About-us.svg');
+}
+#image{
+  width: 50%;
+  height: 45%;
+  margin: 0 auto;
+}
+#features{
+  background-image: url('../Images/Features-background.svg');
+}
+#feature-card{
+  background-image: url('../Images/Feature-background.svg');
+}
+#listing{
+  background-image:url('../Images/Property-listing.svg')
+}
+#contact-us{
+  background-image: url('../Images/contact-us.svg');
+  /* background-color: purple; */
+}
+#footer-section{
+  background-image:url('../Images/Footer.svg')
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
