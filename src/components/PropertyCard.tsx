@@ -19,7 +19,7 @@ const PropertyCard: React.FC<CardProps> = ({
 }) => {
 
     return (
-        <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-4">
+        <div className=" max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-4">
             <Image
                 className="w-full h-64 object-cover object-center"
                 src={imageUrl}
@@ -57,12 +57,12 @@ const PropertyCard: React.FC<CardProps> = ({
             {market === 'rent' ? 'Rent Now' : 'Buy Now'}
           </button> */}
                     {market === 'sale' ? (
-                        <button className="w-[95%] mx-auto bg-purple-400 hover:bg-purple-800 text-white py-2 px-4 rounded inline-block  ">
+                        <button className="w-[95%] mx-auto  text-white py-2 px-4 rounded inline-block  " id='button'>
                             Buy Now
                         </button>
 
                     ) : (
-                        <button className="w-[95%] mx-auto bg-green-400 hover:bg-green-800 text-white py-2 px-4 rounded inline-block ">
+                        <button className="w-[95%] mx-auto  text-white py-2 px-4 rounded inline-block " id='button'>
                             Rent Now
                         </button>
                     )}

@@ -28,6 +28,10 @@
 #footer-section{
   background-image:url('../Images/Footer.svg')
 }
+#button{
+  background-image: url('../Images/Button.svg');
+  /* background-color: rgb(99, 4, 99); */
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
