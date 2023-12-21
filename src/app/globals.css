@@ -32,6 +32,9 @@
   background-image: url('../Images/Button.svg');
   /* background-color: rgb(99, 4, 99); */
 }
+#testimony-section{
+  background-image:url('../Images/testimonies/testimony.svg')
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

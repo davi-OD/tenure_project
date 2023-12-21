@@ -145,8 +145,8 @@ export default function Home() {
         <PropertyListing />
         <ContactSection />
         <TestimonialSection />
+        <FooterSection />
       </div>
-      <FooterSection />
     </div>
   )
 }
