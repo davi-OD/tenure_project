@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
+import { Web3ModalProvider } from "../Context/Web3Modal";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,14 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="mx-35">
-        {children}
-        </div>
-        
-      </body>
-    </html>
+      <html lang="en">
+        <body className={inter.className}>
+          <div className="mx-35">
+            <Web3ModalProvider>
+              {children}
+            </Web3ModalProvider>
+
+          </div>
+
+        </body>
+      </html>
     </ClerkProvider>
   )
 }
