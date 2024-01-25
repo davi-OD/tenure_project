@@ -10,6 +10,8 @@ import Image from 'next/image'
 import { LandContext, LandProvider } from "@/Context/LandContext";
 import { useContext, useEffect, useState } from "react";
 import Table from "@/components/Table";
+import CardWrapper from "@/components/Cards";
+import CardTextButton from "@/components/CardTextButton";
 
 // `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
 export default function Page() {
@@ -39,10 +41,11 @@ export default function Page() {
 
   return (
 
-      <main className='bg-gray-100 min-h-screen'>
-        <Header />
-        <Cards />
-        {/* <Table
+    <main className='bg-gray-100 min-h-screen'>
+      <Header />
+      <CardTextButton />
+
+      {/* <Table
           setCreateLandDetailModel={setCreateLandDetailModel}
           allLandData={allLandData}
         />
@@ -64,13 +67,13 @@ export default function Page() {
         setLandModel={setLandModel}
         /> */}
 
-        {/* <div className="p-6">
+      {/* <div className="p-6">
             <Users />
             <Forms />
 
           </div> */}
 
-      </main>
+    </main>
 
   )
 }

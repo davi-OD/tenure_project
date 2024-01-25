@@ -3,8 +3,9 @@ import { UserButton } from '@clerk/nextjs'
 
 function Header() {
   return (
-    <div className='flex justify-end px-4 gap-x-14'>
+    <div className='flex justify-end px-4 gap-x-14 py-5'>
       {/* <h2>Welcome Back, David</h2> */}
+      <button className="rounded-md bg-violet-900 p-3 text-white text-sm font-medium hover:bg-violet-700 hover:text-white">Upload Record</button>
       <w3m-button />
       <UserButton afterSignOutUrl='/' />
       {/* <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
