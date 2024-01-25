@@ -11,14 +11,14 @@ import clsx from 'clsx';
 // Depending on the size of the application, this would be stored in a database.
 const links = [
     { name: 'Home', href: '/dashboard', icon: RxDashboard },
-    {
-        name: 'Notifications',
-        href: '/dashboard/notifications',
-        icon: RxBell,
-    },
+    // {
+    //     name: 'Notifications',
+    //     href: '/dashboard/notifications',
+    //     icon: RxBell,
+    // },
     { name: 'Land Records', href: '/dashboard/landRecords', icon: RxPencil2 },
     { name: 'Transactions', href: '/dashboard/transactions', icon: TbArrowsLeftRight },
-    { name: 'Settings', href: '/dashboard/settings', icon: FiSettings },
+    // { name: 'Settings', href: '/dashboard/settings', icon: FiSettings },
     { name: 'Profile', href: '/dashboard/profile', icon: RxPerson },
 ];
 
